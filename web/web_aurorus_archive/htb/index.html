@@ -1,0 +1,15 @@
+<script>
+  // Open the new tab right away
+  // window.open('http://127.0.0.1:1337/my-bids');
+
+  window.open('http://127.0.0.1:1337/logout');
+
+  // Wait 2 seconds, then redirect the current page
+  setTimeout(function() {
+    window.open('http://127.0.0.1:1337/callback?code=8ba70f277c42248b526a963c66320ab867dec133');
+  }, 1000);
+
+  setTimeout(function() {
+    window.open('http://127.0.0.1:1337/my-bids');
+  }, 2000);
+</script>
